@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import chatModel from "../../../Server/Models/chatModel";
 import { getRequest, baseUrl } from "../Utils/Services";
 
 
