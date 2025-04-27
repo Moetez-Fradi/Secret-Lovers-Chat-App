@@ -9,6 +9,8 @@ const createToke = (_id) => {
 }
 
 export const registerUser = async (req, res) => {
+    // just comment the next line to make the server work normally
+    return res.status(403).json("registration closed! no more people allowed");
     try {
     const {username, email, password, gender} = req.body;
     let user = await userModel.findOne({username});
